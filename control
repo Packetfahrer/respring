@@ -1,0 +1,13 @@
+Package: com.futix.respring
+Name: respring
+Version: 0.1
+Architecture: iphoneos-arm
+Depends: mobilesubstrate
+Description: Respring Icon
+ This tweak adds a respring icon to the homescreen.
+Homepage: http://www.futix.eu
+Depiction: http://www.futix.eu
+Maintainer: Felix Hirner <fh@futix.eu>
+Author: Felix Hirner <fh@futix.eu>
+Sponsor: futix.eu <http://www.futix.eu>
+Section: Tweaks
