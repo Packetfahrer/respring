@@ -3,14 +3,11 @@
 %subclass respringIcon : SBApplicationIcon
 - (void)launch
 {
-	system("killall -9 SpringBoard");
-}
-/*- (void)launch
-{
-	UIAlertView *launchView = [[UIAlertView alloc] initWithTitle:nil message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Safe Mode", @"Respring", nil];
+	UIAlertView *launchView = [[UIAlertView alloc] initWithTitle:@"" message:@"" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Safe Mode", @"Respring", nil];
 	[launchView show];
 	[launchView release];
 }
+%end
 - (void)alertView:(UIAlertView *)launchView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
 	if (buttonIndex == 0)
@@ -22,5 +19,4 @@
 	{
 		system("killall -9 SpringBoard");
 	}
-}*/
-%end
+}
