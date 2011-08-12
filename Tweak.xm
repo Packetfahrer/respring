@@ -4,8 +4,15 @@
 - (void)launch
 {
 	UIAlertView *launchView = [[UIAlertView alloc] initWithTitle:nil message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:@"Safe Mode", @"Respring", nil];
+	[self performSelector:@selector(dismissAlert:) withObject:launchView afterDelay:5];
 	[launchView show];
 	[launchView release];
+}
+
+%new(v@:@@)
+- (void)dismissAlert:(UIAlertView *)alert
+{
+	[alert dismissWithClickedButtonIndex:-1 animated:YES];
 }
 
 %new(v@:@@)
