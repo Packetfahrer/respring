@@ -1,6 +1,6 @@
 Package: com.futix.respring
 Name: respring
-Version: 1.0
+Version: 1.1
 Architecture: iphoneos-arm
 Depends: mobilesubstrate
 Description: Respring Icon
